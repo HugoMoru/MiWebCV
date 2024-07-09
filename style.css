@@ -1,0 +1,375 @@
+:root{
+    --firstcolor: #3f3f3f;
+    --secondcolor: #5e5e5e;
+    --thirdcolor: #868686;
+    --fourthcolor: #c7c7c7;
+    --backcolor: #a8a8a8;
+    --backcolor2: #e4e4e4;
+    --ObjectsWidth: 700px;
+    --FontSize:50px;
+    --TextOverlay:20px;
+    --HeadTextWidth: 550px;
+}
+
+@media (max-width:1500px) {
+    :root{
+        --ObjectsWidth:500px;
+        --FontSize:35px;
+        --TextOverlay:15px;
+        --HeadTextWidth:300px;
+    }
+
+    #tNombre{
+        font-size: 20px;
+    }
+
+    #tSubtitulo{
+        font-size: 15px;
+    }
+}
+
+@font-face {
+    font-family: Moderniz;
+    src: url("moderniz/Moderniz.otf") format("opentype");
+}
+
+.bGeneral{
+    background-color: var(--backcolor);
+    background-image: url("img/patron.png");
+    background-size: 50%;
+    max-width: 1920px;
+    min-width: 1200px;
+    margin:auto;
+}
+
+.dContenido{
+    background-color: var(--backcolor2);
+}
+
+.hCabecera {
+    background: var(--secondcolor);
+    position: relative; 
+    overflow: hidden;
+}
+
+.hCabecera::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/fondocabecera.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+    z-index: 1; 
+}
+
+.dCabecera {
+    display: flex;
+    margin: 0%;
+    width: 100%;
+    position: relative; 
+    z-index: 2; 
+}
+
+.dCabeceraTexto {
+    width: var(--HeadTextWidth);
+    height: fit-content;
+    margin: auto;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--fourthcolor);
+}
+
+#tNombre {
+    font-family: 'Moderniz';
+    color: var(--firstcolor);
+}
+
+#tSubtitulo {
+    font-family: 'Moderniz';
+    color: var(--secondcolor);
+}
+
+#iImagen{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+    z-index: 2; 
+    transition: transform 0.5s ease;
+}
+
+#iImagenCabecera{
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#tTitulo{
+    margin-top: 0%;
+    padding:20px;
+    padding-right: 40px;
+    text-align: center;
+    font-style: italic;
+    text-align: right;
+    font-size: 40px;
+    font-family: 'Moderniz';
+    color: var(--firstcolor);
+    background-color: var(--fourthcolor);
+    text-shadow: 2px 10px 5px var(--fourthcolor);
+}
+.dApartado{
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.dTextos{
+    width: var(--ObjectsWidth);
+    height: 200px;
+    display: grid;
+    align-items: center;
+}
+#tTextoApartados1{
+    font-family: 'Moderniz';
+    font-size: var(--FontSize);
+    text-align: left;
+    color: var(--secondcolor);
+}
+#tTextoApartados2{
+    font-family: 'Moderniz';
+    font-size: var(--FontSize);
+    text-align: right;
+    color: var(--secondcolor);
+}
+.dInfo{
+    display: grid;
+}
+.dInfo1{
+    width: var(--ObjectsWidth);
+    margin-right: 4%;
+    margin-left: auto;
+    text-align: right;
+    float:inline-start;
+    background-color: var(--thirdcolor);
+    border-radius: 2%;
+    box-shadow: 2px 10px 5px var(--firstcolor);
+    overflow: hidden;
+    display: flow-root;
+    position: relative; 
+}
+
+.dInfo2{
+    width: var(--ObjectsWidth);
+    margin-left: 4%;
+    margin-right: auto;
+    text-align: left;
+    float: right;
+    background-color: var(--fourthcolor);
+    border-radius: 2%;
+    box-shadow: 2px 10px 5px var(--secondcolor);
+    overflow: hidden;
+    position: relative; 
+}
+
+.text-overlay1 {
+    content: '';
+    position: absolute; 
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%);
+    z-index: 1; 
+    width: var(--ObjectsWidth);
+    height: fit-content;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: var(--TextOverlay);
+    font-family: 'Moderniz';
+    color: var(--fourthcolor);
+}
+
+.text-overlay2 {
+    content: '';
+    position: absolute; 
+    top: 50%; 
+    left: 20px; 
+    transform: translateY(-50%);
+    z-index: 1; 
+    width: var(--ObjectsWidth);
+    height: fit-content;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: var(--TextOverlay);
+    font-family: 'Moderniz';
+    color: var(--secondcolor);
+}
+
+.dInfo1:hover img {
+    transform: translateX(-450px) scaleX(0.5) scaleY(0.5);
+}
+
+.dInfo1:hover .text-overlay1 {
+    opacity: 1;
+}
+
+.dInfo2:hover img {
+    transform: translateX(450px) scaleX(0.5) scaleY(0.5);
+}
+
+.dInfo2:hover .text-overlay2 {
+    opacity: 1;
+}
+
+.dExperiencia{
+    height: 650px;
+    background-color: var(--thirdcolor);
+    padding-bottom: 50px;
+}
+
+.dExpBox{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dTextBox1{
+    width: var(--ObjectsWidth);
+    height: 500px;
+    margin-right: 4%;
+    margin-left: auto;
+    border-radius: 5%;
+}
+
+.dTextBox2{
+    width: var(--ObjectsWidth);
+    height: 500px;
+    margin-left: 4%;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.dExpTextBox{
+    height: 0;
+    background-color: var(--fourthcolor);
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.dTituloTextBox{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tExpTitulo{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Moderniz';
+    color: var(--firstcolor);
+    cursor: default;
+}
+
+.iImagenExp{
+    width: var(--ObjectsWidth);
+    height: fit-content;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.dTituloTextBox:hover + .dExpTextBox{
+    height: 400px;
+}
+
+.dExpTextBox{
+    height: 0;
+    background-color: var(--fourthcolor);
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.dTituloTextBox{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tExpTitulo{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Moderniz';
+    color: var(--firstcolor);
+    cursor: default;
+}
+
+.iImagenExp{
+    width: var(--ObjectsWidth);
+    height: fit-content;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.dTituloTextBox:hover + .dExpTextBox{
+    height: 400px;
+}
+
+.dExpTextBox{
+    height: 0;
+    background-color: var(--fourthcolor);
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.dTituloTextBox{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tExpTitulo{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Moderniz';
+    color: var(--firstcolor);
+    cursor: default;
+}
+
+.iImagenExp{
+    height: 425px;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.dTituloTextBox:hover + .dExpTextBox{
+    height: 425px;
+}
+
+.dTituloTextBox:hover + .dExpTextBox + .iImagenExp {
+    height: 0;
+}
+
+.dProyectos{
+    height: 650px;
+    background-color: var(--backcolor2);
+    padding-bottom: 50px;
+}
+
+
