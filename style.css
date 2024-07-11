@@ -438,4 +438,95 @@
     padding-bottom: 50px;
 }
 
+.tListado{
+    text-align: center;
+    font-family: 'Moderniz';
+    font-size: 30px;
+    color: var(--firstcolor);
+}
 
+.dProy{
+    display: block;
+    width: 1000px;
+    margin: auto;
+}
+
+.dInfoProyT{
+    display: flex;
+    align-items: center;
+}
+
+.dInfoProyT h1{
+    font-family: 'Moderniz';
+    font-size: 20px;
+    color: var(--firstcolor);
+    width: 300px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.dInfoProyT p{
+    font-family: 'Moderniz';
+    font-size: 20px;
+    color: var(--secondcolor);
+    width: 200px;
+    margin-right: 20px;
+}
+
+.dInfoProyT a{
+    font-family: 'Moderniz';
+    font-size: 20px;
+    color: var(--firstcolor);
+    width: fit-content;
+    margin-right: 20px;
+}
+
+.dInfoProy{
+    display: flex;
+    align-items: center;
+    background-color: var(--thirdcolor);
+}
+
+.dInfoProy h1{
+    font-family: 'Moderniz';
+    font-size: 15px;
+    color: var(--firstcolor);
+    width: 300px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.dInfoProy p{
+    font-family: 'Moderniz';
+    font-size: 12px;
+    color: var(--secondcolor);
+    width: 200px;
+    margin-right: 20px;
+}
+
+.dInfoProy a{
+    font-family: 'Moderniz';
+    font-size: 15px;
+    color: var(--firstcolor);
+    width: fit-content;
+    margin-right: 20px;
+}
+
+.dPhotProy{
+    height: 0px;
+    display: flex;
+    width: 1000px;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: var(--secondcolor);
+    transition: height 0.5s ease;
+}
+
+.dProy:hover .dPhotProy{
+    height: 260px;
+}
+
+.dPhotProy img{
+    height: 200px;
+    margin: 20px;
+}
