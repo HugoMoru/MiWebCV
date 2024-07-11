@@ -13,6 +13,23 @@
 
 <body class="bGeneral">
     <div class="dContenido">
+        <div class="dEstiloseIdiomas">
+            <div class="dColores">
+                <button type="button" class="bBotonDesplegable" id="bBotonDCol"><img class="iImagenBotones" src="img/color.png" alt="Rueda de colores"></button>
+                <div class="dEyIBotones hidden" id="dBColores">
+                    <button type="button" id="bCol1"></button>
+                    <button type="button" id="bCol2"></button>
+                    <button type="button" id="bCol3"></button>
+                </div>
+            </div>
+            <div class="dIdiomas">
+                <div class="dEyIBotones hidden" id="dBIdiomas">
+                    <button id="bId1"><img class="iImagenBotones" src="img/esp.png" alt="Icono de Español"></button>
+                    <button id="bId2"><img class="iImagenBotones" src="img/uk.png" alt="Icono de Inglés"></button>
+                </div>
+                <button type="button" class="bBotonDesplegable" id="bBotonDLan"><img class="iImagenBotones" src="img/lenguaje.png" alt="Icono de Idiomas"></button>
+            </div>
+        </div>
         <header class="hCabecera">
             <div class="dCabecera">
                 <img id="iImagenCabecera" src="img/hugo.jpg" alt="Foto de Hugo">
@@ -24,71 +41,71 @@
             </div>
         </header>
         <section class="sSection">
-            <h1 id="tTitulo">Bienvenido a mi Curriculum Vitae</h1>
+            <h1 class="tTitulo" id="tTituloCV">Bienvenido a mi Curriculum Vitae</h1>
             <div class="dInfo">
                 <div class="dApartado">
                     <div class="dInfo1">
-                        <img id="iImagen" src="img/code.png" alt="">
+                        <img id="iImagen" src="img/code.png" alt="Logo de código">
                         <div class="text-overlay1">Java, Python, C++ & C#,<br> Node Js, Delphi, HTML, CSS, JS,<br> SQL, Angular, Razor, Blazor.</div>
                     </div>
                     <div class="dTextos">
-                        <h1 id="tTextoApartados1">Experiencia<br>en codigo</h1>
+                        <h1 class="tTextoApartados1" id="tTextoAp1">Experiencia<br>en codigo</h1>
                     </div>
                 </div>
                 <div class="dApartado">
                     <div class="dTextos">
-                        <h1 id="tTextoApartados2">Conocimiento<br>de aplicaciones</h1>
+                        <h1 class="tTextoApartados2" id="tTextoAp2">Conocimiento<br>de aplicaciones</h1>
                     </div>
                     <div class="dInfo2">
-                        <img id="iImagen" src="img/apps.png" alt="">
-                        <div class="text-overlay2">Visual Studio y VS Code,<br>Netbeans, Eclipse, Intellij,<br>Pycharm, SQL DB Management, <br>MySQL, Github,Android Studio.
+                        <img id="iImagen" src="img/apps.png" alt="Logo de aplicaciones">
+                        <div class="text-overlay2">Visual Studio, VS Code,<br>Netbeans, Eclipse, Intellij,<br>Pycharm, SQL DB Management, <br>MySQL, Github, Android Studio.
                         </div>
                     </div>
                 </div>
                 <div class="dApartado">
                     <div class="dInfo1">
-                        <img id="iImagen" src="img/fortalezas.png" alt="">
-                        <div class="text-overlay1">Social<br>Autodidacta<br>Dedicado<br>Resolutivo</div>
+                        <img id="iImagen" src="img/fortalezas.png" alt="Barzo sacando músculo">
+                        <div class="text-overlay1"><p id="tFortalezas">Social<br>Autodidacta<br>Dedicado<br>Resolutivo</p></div>
                     </div>
                     <div class="dTextos">
-                        <h1 id="tTextoApartados1">Fortalezas</h1>
+                        <h1 class="tTextoApartados1" id="tTextoAp3">Fortalezas</h1>
                     </div>
                 </div>
                 <div class="dApartado">
                     <div class="dTextos">
-                        <h1 id="tTextoApartados2">Aptitudes</h1>
+                        <h1 class="tTextoApartados2" id="tTextoAp4">Aptitudes</h1>
                     </div>
                     <div class="dInfo2">
-                        <img id="iImagen" src="img/aptitudes.png" alt="">
-                        <div class="text-overlay2">Idiomas: <br>-  Ingles <br>-  Aleman <br>-  Portugues <br>Carnet B de Conducir</div>
+                        <img id="iImagen" src="img/aptitudes.png" alt="Bombilla encendida">
+                        <div class="text-overlay2" id="tAptitudes">Idiomas: <br>-  Ingles (B2) <br>-  Aleman (Basico)<br>-  Portugues (Basico)<br>Carnet B de Conducir <br>(Desde Feb 2022)</div>
                     </div>
                 </div>
             </div>
             <div class="dExperiencia">
-                <h1 id="tTitulo">Experiencia Laboral</h1>
+                <h1 class="tTitulo" id="tTituloEL">Experiencia Laboral</h1>
                 <div class="dExpBox">
                     <div class="dTextBox1">
-                        <div class="dTituloTextBox"><h2 id="tExpTitulo">Ayuntamiento de <br>Villanueva del Fresno</h2></div>
+                        <div class="dTituloTextBox"><h2 class="tExpTitulo" id="tExpTitulo1">Ayuntamiento de <br>Villanueva del Fresno</h2></div>
                         <div class="dExpTextBox">
-                            <p>
-                                Texto de Ejemplo
+                            <p class="tExpTexto" id="tExpTexto1">
+                                Durante el período de marzo a junio de 2021, en el Ayuntamiento de Villanueva del Fresno, desempeñé funciones de soporte informático. Mis responsabilidades incluyeron el mantenimiento de equipos informáticos y la solución de problemas tanto en los equipos como en las aplicaciones, asegurando el correcto funcionamiento y la eficiencia de los sistemas tecnológicos municipales.
                             </p>
                         </div>
-                        <img src="img/ayun.jpg" alt="" class="iImagenExp">
+                        <img src="img/ayun.jpg" alt="Imagen de la plaza de Villanueva del Fresno" class="iImagenExp">
                     </div>
                     <div class="dTextBox2">
-                        <div class="dTituloTextBox"><h2 id="tExpTitulo">Cristian Lay</h2></div>
+                        <div class="dTituloTextBox"><h2 class="tExpTitulo" id="tExpTitulo2">Cristian Lay</h2></div>
                         <div class="dExpTextBox">
-                            <p>
-                                Texto de Ejemplo
+                            <p class="tExpTexto" id="tExpTexto2">
+                                Entre marzo y junio de 2023, trabajé en el Grupo Industrial Cristian Lay en el desarrollo y debug de aplicaciones. Mis tareas principales incluyeron el desarrollo de soluciones de código, la búsqueda y corrección de errores, así como la realización de pruebas de implementaciones, contribuyendo a la mejora y optimización de las aplicaciones utilizadas por la empresa.
                             </p>
                         </div>
-                        <img src="img/clay.jpg" alt="" class="iImagenExp">
+                        <img src="img/clay.jpg" alt="Imagen de la sede de Cristian Lay" class="iImagenExp">
                     </div>
                 </div>
             </div>
             <div class="dProyectos">
-                <h1 id="tTitulo">Proyectos Personales</h1>
+                <h1 class="tTitulo" id="tTituloPP">Proyectos Personales</h1>
             </div>
         </section>
         <footer class="fFooter">

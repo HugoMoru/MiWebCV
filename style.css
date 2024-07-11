@@ -1,6 +1,6 @@
 :root{
     --firstcolor: #3f3f3f;
-    --secondcolor: #5e5e5e;
+    --secondcolor: #4e4e4e;
     --thirdcolor: #868686;
     --fourthcolor: #c7c7c7;
     --backcolor: #a8a8a8;
@@ -46,8 +46,68 @@
     background-color: var(--backcolor2);
 }
 
+.dEstiloseIdiomas{
+    display: inline;
+}
+
+.dColores{
+    display: inline;
+}
+
+#bCol1{
+    background-color: #293bdf;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+}
+
+#bCol2{
+    background-color: #9ce27c;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+}
+
+#bCol3{
+    background-color: #da7b00;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+}
+
+.dEyIBotones{
+    display: inline;
+    height: fit-content;
+    width: fit-content;
+}
+
+.dEyIBotones button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+.bBotonDesplegable{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dIdiomas{
+    display: inline;
+    float: inline-end;
+}
+
+.iImagenBotones{
+    height: 50px;
+}
+
 .hCabecera {
-    background: var(--secondcolor);
+    background: var(--thirdcolor);
     position: relative; 
     overflow: hidden;
 }
@@ -106,13 +166,14 @@
 }
 
 #iImagenCabecera{
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 100px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-#tTitulo{
+.tTitulo{
     margin-top: 0%;
     padding:20px;
     padding-right: 40px;
@@ -138,13 +199,13 @@
     display: grid;
     align-items: center;
 }
-#tTextoApartados1{
+.tTextoApartados1{
     font-family: 'Moderniz';
     font-size: var(--FontSize);
     text-align: left;
     color: var(--secondcolor);
 }
-#tTextoApartados2{
+.tTextoApartados2{
     font-family: 'Moderniz';
     font-size: var(--FontSize);
     text-align: right;
@@ -270,7 +331,7 @@
     align-items: center;
 }
 
-#tExpTitulo{
+.tExpTitulo{
     width: fit-content;
     height: fit-content;
     text-align: center;
@@ -340,14 +401,19 @@
     align-items: center;
 }
 
-#tExpTitulo{
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Moderniz';
+.tExpTexto{
+    margin: 15px;
+    font-size: 30px;
+    font-family: 'Helvetica';
+    font-style: oblique;
+    font-variant: small-caps;
     color: var(--firstcolor);
-    cursor: default;
+}
+
+@media (max-width:1500px) {
+    #tExpTexto{
+        font-size: 25px;
+    }
 }
 
 .iImagenExp{
